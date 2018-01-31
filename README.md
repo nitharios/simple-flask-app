@@ -17,18 +17,19 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 ### Pre-Install
 
 1. `pip install virtualenv`
-2. `pip install virtualenvwrapper`
-3. `mkdir ~/.virtualenvs`
-4. Open `.bashrc`
-5. Include `export WORKON_HOME=~/.virtualenvs` and `/usr/local/bin/virtualenvwrapper.sh`
-6. Save then close and re-open terminal.
+1. `pip install virtualenvwrapper`
+1. `mkdir ~/.virtualenvs`
+1. Open `.bashrc`
+1. Include `export WORKON_HOME=~/.virtualenvs` and `/usr/local/bin/virtualenvwrapper.sh`
+1. Save then close and re-open terminal.
 
 ### Install
 
 1. `git clone <REPO URL>`
 1. `cd` into folder
 1. Check the path for python3 `which python3`
-1. Create a virtualenv with python3 path in the flag `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
+1. Create a virtualenv with python3 path in the flag 
+`mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
 1. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
 1. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
 1. `pip install ./requirements.txt`
@@ -45,8 +46,8 @@ In my limited experience, installing things Python-related has a 50/50 chance of
 Installing virtualenvwrapper throws a traceback error involving `six-1.4.1`. This seems to be a problem with your computer if you are running OSX. To solve this:
 
 1. `sudo pip install pbr`
-2. `sudo pip install --no-deps stevedore`
-3. `sudo pip install --no-deps virtualenvwrapper`
+1. `sudo pip install --no-deps stevedore`
+1. `sudo pip install --no-deps virtualenvwrapper`
 
 ## Resources
 - [How to Use Virtual Environments for Python Projects](http://www.patricksoftwareblog.com/how-to-use-virtual-environments-for-python-projects/)
