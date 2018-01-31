@@ -27,10 +27,10 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 
 1. `git clone <REPO URL>`
 1. `cd` into folder
-1. `which python3` to check python3 path
-1. `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>` to create virtual environment
-1. `ls -l ~/.virtualenvs/` to check it has been created
-1. `workon <VIRTUAL ENV NAME || py_env>` to activate it
+1. Check the path for python3 `which python3`
+1. Create envirentment `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
+1. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
+1. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
 1. `pip install ./requirements.txt`
 1. `python run.py`
 1. Open your browser to `localhost:5000`
