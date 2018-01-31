@@ -25,11 +25,16 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 
 ### Install
 
-1. `mkdir simple_flask_app` OR `git clone <REPO URL>`
-2. Check the path for python3 `which python3`
-3. Create a virtualenv with python3 path in the flag `mkvirtualenv --python=<PYTHON PATH> <VIRTUAL ENV NAME || py_env>`
-4. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
-5. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
+1. `git clone <REPO URL>`
+1. `cd` into folder
+1. Check the path for python3 `which python3`
+1. Create a virtualenv with python3 path in the flag `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
+1. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
+1. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
+1. `pip install ./requirements.txt`
+1. `python run.py`
+1. Open your browser to `localhost:5000`
+1. TA DA!
 
 ### Errors
 
