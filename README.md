@@ -20,7 +20,11 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 1. `pip install virtualenvwrapper`
 1. `mkdir ~/.virtualenvs`
 1. Open `.bashrc`
-1. Include `export WORKON_HOME=~/.virtualenvs` and `/usr/local/bin/virtualenvwrapper.sh`
+1. Include in your `.bashrc`
+```bash
+export WORKON_HOME=~/.virtualenvs
+/usr/local/bin/virtualenvwrapper.sh
+```
 1. Save then close and re-open terminal.
 
 ### Install
@@ -31,9 +35,18 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 ```bash
 which python3
 ```
-1. Create environment `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
-1. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
-1. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
+1. Create environment 
+```bash
+mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>
+```
+1. Check that virtualenv has been created 
+```bash
+ls -l ~/.virtualenvs/
+```
+1. Activate virtualenv 
+```bash
+workon <VIRTUAL ENV NAME || py_env>
+```
 1. `pip install ./requirements.txt`
 1. `python run.py`
 1. Open your browser to `localhost:5000`
