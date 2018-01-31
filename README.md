@@ -35,15 +35,15 @@ export WORKON_HOME=~/.virtualenvs
 ```bash
 which python3
 ```
-4. Create environment 
+4. Create virtual environment 
 ```bash
 mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>
 ```
-5. Check that virtualenv has been created 
+5. Check that virtual environment has been created 
 ```bash
 ls -l ~/.virtualenvs/
 ```
-6. Activate virtualenv 
+6. Activate the virtual environment 
 ```bash
 workon <VIRTUAL ENV NAME || py_env>
 ```
