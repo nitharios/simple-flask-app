@@ -35,15 +35,13 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 
 In my limited experience, installing things Python-related has a 50/50 chance of returning a traceback error. Here are the issues I have come across in this project:
 
-1. Installing virtualenvwrapper throws a traceback error involving `six-1.4.1`
+[Can't install virtualenvwrapper](https://stackoverflow.com/questions/32086631/cant-install-virtualenvwrapper-on-osx-10-11-el-capitan)
 
-  This seems to be a problem with your computer if you are running OSX. To solve this:
+Installing virtualenvwrapper throws a traceback error involving `six-1.4.1`. This seems to be a problem with your computer if you are running OSX. To solve this:
 
-  `sudo pip install pbr`
-  `sudo pip install --no-deps stevedore`
-  `sudo pip install --no-deps virtualenvwrapper`
-
-  [Can't install virtualenvwrapper](https://stackoverflow.com/questions/32086631/cant-install-virtualenvwrapper-on-osx-10-11-el-capitan)
+1. `sudo pip install pbr`
+2. `sudo pip install --no-deps stevedore`
+3. `sudo pip install --no-deps virtualenvwrapper`
 
 ## Resources
 - [How to Use Virtual Environments for Python Projects](http://www.patricksoftwareblog.com/how-to-use-virtual-environments-for-python-projects/)
