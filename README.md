@@ -27,8 +27,11 @@ Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrap
 
 1. `git clone <REPO URL>`
 1. `cd` into folder
-1. Check the path for python3 `which python3`
-1. Create envirentment `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
+1. Check the path for python3 
+```bash
+which python3
+```
+1. Create environment `mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>`
 1. Check that virtualenv has been created `ls -l ~/.virtualenvs/`
 1. Activate virtualenv `workon <VIRTUAL ENV NAME || py_env>`
 1. `pip install ./requirements.txt`
