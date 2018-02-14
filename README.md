@@ -52,7 +52,7 @@ workon <VIRTUAL ENV NAME || py_env>
 9. Open your browser to `localhost:5000`
 10. TA DA!
 
-### Errors
+## Errors
 
 In my limited experience, installing things Python-related has a 50/50 chance of returning an error. Here are the issues I have come across in this project:
 
