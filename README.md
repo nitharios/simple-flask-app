@@ -29,7 +29,7 @@ export WORKON_HOME=~/.virtualenvs
 
 ### Install
 
-1. `git clone <REPO URL>`
+1. `git clone [REPO_URL]`
 1. `cd` into folder
 1. Check the path for python3 
 ```bash
@@ -37,7 +37,7 @@ which python3
 ```
 4. Create virtual environment 
 ```bash
-mkvirtualenv --python=<PYTHON3 PATH> <VIRTUAL ENV NAME || py_env>
+mkvirtualenv --python=[PYTHON3_PATH] [VIRTUALENV_NAME || py_env]
 ```
 5. Check that virtual environment has been created 
 ```bash
@@ -45,7 +45,7 @@ ls -l ~/.virtualenvs/
 ```
 6. Activate the virtual environment 
 ```bash
-workon <VIRTUAL ENV NAME || py_env>
+workon [VIRTUALENV_NAME || py_env]
 ```
 7. `pip install -r .requirements.txt`
 8. `python run.py`
