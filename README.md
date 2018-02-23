@@ -12,14 +12,14 @@ The installation of packages and modules done here worked on my own system. Ther
 
 Below are the steps I followed to set up this project. The steps may differ for you.
 
-Assuming you have `pip`, if you have not set up `virtualenv` and `virtualenvwrapper` you should do the pre-install!
+Assuming you have `pip3`, if you have not set up `virtualenv` and `virtualenvwrapper` you should do the pre-install!
 
 ### Pre-Install
 
-1. `pip install virtualenv`
-1. `pip install virtualenvwrapper`
+1. `pip3 install virtualenv`
+1. `pip3 install virtualenvwrapper`
 1. `mkdir ~/.virtualenvs`
-1. Open `.bashrc`
+1. Open or `touch .bashrc` then open `.bashrc`
 1. Include in your `.bashrc`
 ```bash
 export WORKON_HOME=~/.virtualenvs
@@ -29,15 +29,15 @@ export WORKON_HOME=~/.virtualenvs
 
 ### Install
 
-1. `git clone [REPO_URL]`
+1. `git clone REPO_URL`
 1. `cd` into folder
-1. Check the path for python3 
+1. Check the PYTHON3_PATH for python3 
 ```bash
 which python3
 ```
-4. Create virtual environment 
+4. Create virtual environment with your custom unique VIRTUALENV_NAME name or use py_env if you haven't before
 ```bash
-mkvirtualenv --python=[PYTHON3_PATH] [VIRTUALENV_NAME || py_env]
+mkvirtualenv --python=PYTHON3_PATH VIRTUALENV_NAME
 ```
 5. Check that virtual environment has been created 
 ```bash
@@ -45,9 +45,9 @@ ls -l ~/.virtualenvs/
 ```
 6. Activate the virtual environment 
 ```bash
-workon [VIRTUALENV_NAME || py_env]
+workon VIRTUALENV_NAME || py_env
 ```
-7. `pip install -r .requirements.txt`
+7. `pip3 install -r .requirements.txt`
 8. `python run.py`
 9. Open your browser to `localhost:5000`
 10. TA DA!
