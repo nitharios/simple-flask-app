@@ -16,8 +16,10 @@ Assuming you have `pip3`, if you have not set up `virtualenv` and `virtualenvwra
 
 ### Pre-Install
 
-1. `pip3 install virtualenv`
-1. `pip3 install virtualenvwrapper`
+*you may need to use `sudo` to run these commands successfully*
+
+1. `pip install virtualenv`
+1. `pip install virtualenvwrapper`
 1. `mkdir ~/.virtualenvs`
 1. Open or `touch .bashrc` then open `.bashrc`
 1. Include in your `.bashrc`
@@ -47,7 +49,7 @@ ls -l ~/.virtualenvs/
 ```bash
 workon VIRTUALENV_NAME || py_env
 ```
-7. `pip3 install -r .requirements.txt`
+7. `pip install -r .requirements.txt`
 8. `python run.py`
 9. Open your browser to `localhost:5000`
 10. TA DA!
