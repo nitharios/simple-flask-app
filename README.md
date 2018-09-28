@@ -49,7 +49,7 @@ ls -l ~/.virtualenvs/
 ```bash
 workon VIRTUALENV_NAME || py_env
 ```
-7. `pip install -r .requirements.txt`
+7. `pip install -r requirements.txt`
 8. `python run.py`
 9. Open your browser to `localhost:5000`
 10. TA DA!
